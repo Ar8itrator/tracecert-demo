@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TraceCert | AI Code, Enterprise Trust</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-200">
+
+  <!-- Hero -->
+  <header class="hero-bg py-24">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-6xl font-bold tracking-tight mb-6">
+        AI Code.<br><span class="text-emerald-400">Enterprise Trust.</span>
+      </h1>
+      <p class="text-2xl text-gray-400 max-w-3xl mx-auto mb-10">
+        The first tool that turns every line of AI-generated code into a verifiable, 
+        auditable, and certifiable product — from the very first prompt.
+      </p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="#install" 
+           class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-8 py-4 rounded-xl text-lg transition">
+          Get Started Free — pip install tracecert
+        </a>
+        <a href="#enterprise" 
+           class="border border-gray-500 hover:border-white font-semibold px-8 py-4 rounded-xl text-lg transition">
+          Request Enterprise License
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-gray-500">Currently used in healthcare & regulated software development</p>
+    </div>
+  </header>
+
+  <!-- Problem -->
+  <section class="py-20 bg-gray-900">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center mb-12">“Built with AI” is currently a <span class="text-red-400">liability</span></h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-8 rounded-2xl">
+          <p class="text-5xl mb-4">❌</p>
+          <h3 class="text-xl font-semibold mb-3">Procurement Rejection</h3>
+          <p class="text-gray-400">Hospitals, banks, and government agencies hesitate to buy AI-generated software because there’s no trusted verification standard.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-2xl">
+          <p class="text-5xl mb-4">❌</p>
+          <h3 class="text-xl font-semibold mb-3">Hidden AI Usage</h3>
+          <p class="text-gray-400">Most developers hide the fact they used Claude, Cursor, or Grok — slowing adoption and breeding distrust.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-2xl">
+          <p class="text-5xl mb-4">❌</p>
+          <h3 class="text-xl font-semibold mb-3">Post-build Audits</h3>
+          <p class="text-gray-400">Traditional audits happen too late and are expensive. Compliance teams want proof from line one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution -->
+<section class="py-20 bg-gray-950">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-semibold mb-6">Audit as You Build</h2>
+    <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">
+      TraceCert runs alongside your AI coding agent from the first line of code. 
+      Every change is continuously audited, logged, and certified — turning the build process itself into a verifiable compliance trail.
+    </p>
+    <div class="bg-gray-900 rounded-3xl p-10 max-w-3xl mx-auto">
+      <pre class="bg-black p-8 rounded-2xl text-left text-emerald-300 font-mono text-sm overflow-x-auto">
+$ tracecert scan .
+🔍 Scanning project...
+✅ Generated trace • Running certification...
+Level Achieved      : 3
+HIPAA Risk Level    : MEDIUM
+HIPAA Score         : 78/100
+Signature Type      : MVP
+      </pre>
+    </div>
+  </div>
+</section>
+
+  <!-- Certification Levels -->
+  <section class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center mb-12">Certification Levels</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+          <h3 class="text-emerald-400 font-bold text-xl mb-2">Level 1</h3>
+          <p class="font-semibold">AI-Built</p>
+          <p class="text-sm text-gray-400 mt-4">Basic quality, provenance, and disclosure</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+          <h3 class="text-blue-400 font-bold text-xl mb-2">Level 2</h3>
+          <p class="font-semibold">Privacy & Security Verified</p>
+          <p class="text-sm text-gray-400 mt-4">Continuous scanning for secrets, OWASP, data flows</p>
+        </div>
+        <div class="bg-emerald-900/50 p-8 rounded-2xl border border-emerald-500 ring-2 ring-emerald-500">
+          <h3 class="text-emerald-400 font-bold text-xl mb-2">Level 3</h3>
+          <p class="font-semibold">Domain Grade</p>
+          <p class="text-sm text-emerald-300 mt-4">HIPAA-ready today. Real PHI risk analysis, audit logging, encryption patterns.</p>
+          <span class="inline-block mt-6 bg-emerald-500 text-black text-xs font-bold px-4 py-1 rounded-full">Current</span>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 opacity-75">
+          <h3 class="text-purple-400 font-bold text-xl mb-2">Level 4</h3>
+          <p class="font-semibold">Enterprise Certified</p>
+          <p class="text-sm text-gray-400 mt-4">SOC 2 pathway, external auditor integration — Coming 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="install" class="py-24 bg-gradient-to-b from-gray-900 to-black">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-6">Start Certifying Your AI Code Today</h2>
+      <p class="text-xl text-gray-400 mb-10">Free to use. Powerful enough for regulated environments.</p>
+      <div class="bg-black border border-gray-700 rounded-3xl p-8 max-w-md mx-auto">
+        <p class="font-mono text-emerald-400 mb-4">$ pip install -e .</p>
+        <p class="font-mono text-emerald-400">$ tracecert scan .</p>
+      </div>
+      <a href="https://github.com/Ar8itrator/tracecert" 
+         class="mt-10 inline-flex items-center gap-3 bg-white text-black font-semibold px-10 py-4 rounded-2xl hover:bg-gray-200 transition">
+        <i class="fab fa-github text-2xl"></i>
+        View on GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-12 text-center text-gray-500 text-sm">
+    <p>© 2026 TraceCert • All Rights Reserved</p>
+    <p class="mt-2">Built to make AI-generated software trusted in healthcare, finance, and regulated industries.</p>
+  </footer>
+
+</body>
+</html>

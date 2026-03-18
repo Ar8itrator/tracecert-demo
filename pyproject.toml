@@ -1,0 +1,15 @@
+[project]
+name = "tracecert"
+version = "0.3.0"
+description = "AI code certification and continuous audit tool"
+authors = [{ name = "TraceCert" }]
+requires-python = ">=3.9"
+license = { text = "Proprietary - See LICENSE file" }
+
+[project.urls]
+Homepage = "https://github.com/Ar8itrator/TraceCert"
+Repository = "https://github.com/Ar8itrator/TraceCert"
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
