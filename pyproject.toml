@@ -3,12 +3,19 @@ name = "tracecert"
 version = "0.3.0"
 description = "AI code certification and continuous audit tool"
 authors = [{ name = "TraceCert" }]
-requires-python = ">=3.9"
 license = { text = "Proprietary - See LICENSE file" }
+requires-python = ">=3.9"
 
 [project.urls]
-Homepage = "https://github.com/Ar8itrator/TraceCert"
-Repository = "https://github.com/Ar8itrator/TraceCert"
+Homepage = "https://github.com/Ar8itrator/tracecert"
+Repository = "https://github.com/Ar8itrator/tracecert"
+
+[project.scripts]
+tracecert = "tracecert.cli:cli"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tracecert*"]
 
 [build-system]
 requires = ["setuptools>=45", "wheel"]
