@@ -27,7 +27,7 @@ pip install -e .
 # Scan and certify your project
 tracecert scan .
 
-# Example Output
+## Example Output
 Level Achieved      : 3
 AI-Generated        : 99.0% (631 lines)
 Compliance Score    : 60/100
