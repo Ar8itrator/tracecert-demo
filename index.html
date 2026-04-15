@@ -16,6 +16,9 @@
   <!-- Hero -->
   <header class="hero-bg py-24">
     <div class="max-w-6xl mx-auto px-6 text-center">
+      <div class="inline-block bg-emerald-900/40 border border-emerald-600 text-emerald-400 text-sm font-semibold px-4 py-1 rounded-full mb-6">
+        v0.4.0 &mdash; Level 4 Enterprise Certification Now Available
+      </div>
       <h1 class="text-6xl font-bold tracking-tight mb-6">
         AI Code.<br><span class="text-emerald-400">Enterprise Trust.</span>
       </h1>
@@ -33,7 +36,7 @@
           Request Enterprise License
         </a>
       </div>
-      <p class="mt-6 text-sm text-gray-500">Currently used in healthcare & regulated software development</p>
+      <p class="mt-6 text-sm text-gray-500">Built for healthcare, finance, and regulated software development</p>
     </div>
   </header>
 
@@ -71,13 +74,27 @@
     </p>
     <div class="bg-gray-900 rounded-3xl p-10 max-w-3xl mx-auto">
       <pre class="bg-black p-8 rounded-2xl text-left text-emerald-300 font-mono text-sm overflow-x-auto">
-$ tracecert scan .
-🔍 Scanning project...
-✅ Generated trace • Running certification...
-Level Achieved      : 3
-HIPAA Risk Level    : MEDIUM
-HIPAA Score         : 78/100
+$ tracecert scan . --level 4 --export-pdf
+
+Scanning project...
+Generated trace -- Running certification...
+
+================================================================
+TraceCert Level 4 Verification -- Manifest Signed
+================================================================
+Verification Level  : 4
+Levels Verified     : [1, 2, 3, 4]
+AI-Generated        : 99.0% (631 lines)
+Verification Score  : 91/100
+Secrets Found       : 0
+HIPAA Score         : 78/100   [PHI risk: MEDIUM]
+HIPAA-ready         : True
+SOC2 TSC Alignment  : 82/100   [A]
+AI Quality Grade    : B  (slop score 74)
 Signature Type      : MVP
+Output File         : .tracecert/cert-manifest.json
+PDF Report          : .tracecert/report.pdf
+================================================================
       </pre>
     </div>
   </div>
@@ -102,12 +119,12 @@ Signature Type      : MVP
           <h3 class="text-emerald-400 font-bold text-xl mb-2">Level 3</h3>
           <p class="font-semibold">Domain Grade</p>
           <p class="text-sm text-emerald-300 mt-4">HIPAA-ready today. Real PHI risk analysis, audit logging, encryption patterns.</p>
-          <span class="inline-block mt-6 bg-emerald-500 text-black text-xs font-bold px-4 py-1 rounded-full">Current</span>
+          <span class="inline-block mt-6 bg-emerald-500 text-black text-xs font-bold px-4 py-1 rounded-full">Most Popular</span>
         </div>
-        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 opacity-75">
+        <div class="bg-purple-900/30 p-8 rounded-2xl border border-purple-500 ring-2 ring-purple-500">
           <h3 class="text-purple-400 font-bold text-xl mb-2">Level 4</h3>
           <p class="font-semibold">Enterprise Certified</p>
-          <p class="text-sm text-gray-400 mt-4">SOC 2 pathway, external auditor integration — Coming 2026</p>
+          <p class="text-sm text-purple-300 mt-4">Combined SOC 2 TSC + HIPAA signal in a single signed attestation. Requires Level 3 thresholds met.</p>
         </div>
       </div>
     </div>
@@ -119,13 +136,50 @@ Signature Type      : MVP
       <h2 class="text-5xl font-bold mb-6">Start Certifying Your AI Code Today</h2>
       <p class="text-xl text-gray-400 mb-10">Free to use. Powerful enough for regulated environments.</p>
       <div class="bg-black border border-gray-700 rounded-3xl p-8 max-w-md mx-auto">
-        <p class="font-mono text-emerald-400 mb-4">$ pip install -e .</p>
+        <p class="text-gray-500 text-sm mb-2 font-mono"># Install from the wheel in this repo</p>
+        <p class="font-mono text-emerald-400 mb-4">$ pip install dist/tracecert-0.4.0-py3-none-any.whl</p>
         <p class="font-mono text-emerald-400">$ tracecert scan .</p>
       </div>
       <a href="https://github.com/Ar8itrator/tracecert" 
          class="mt-10 inline-flex items-center gap-3 bg-white text-black font-semibold px-10 py-4 rounded-2xl hover:bg-gray-200 transition">
         <i class="fab fa-github text-2xl"></i>
         View on GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- Enterprise -->
+  <section id="enterprise" class="py-24 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-4">Enterprise Licensing</h2>
+      <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">TraceCert is proprietary software. Personal and internal evaluation use is permitted. Commercial use requires a license.</p>
+      <div class="grid md:grid-cols-2 gap-8 text-left mb-12">
+        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+          <h3 class="text-xl font-semibold mb-4 text-emerald-400">What's Included</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i><span>Level 1-4 certification pipeline</span></li>
+            <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i><span>HIPAA + SOC 2 domain plugins</span></li>
+            <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i><span>PDF reports and SVG badges</span></li>
+            <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i><span>GitHub PR bot and CI/CD integration</span></li>
+            <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i><span>Policy-as-code enforcement</span></li>
+            <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1"></i><span>SAST integration (Semgrep/Bandit/Bearer)</span></li>
+          </ul>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+          <h3 class="text-xl font-semibold mb-4 text-purple-400">Enterprise Add-ons</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li class="flex gap-3"><i class="fas fa-check text-purple-400 mt-1"></i><span>Finance, Legal, Government domain plugins</span></li>
+            <li class="flex gap-3"><i class="fas fa-check text-purple-400 mt-1"></i><span>Custom compliance mappings</span></li>
+            <li class="flex gap-3"><i class="fas fa-check text-purple-400 mt-1"></i><span>Team collaboration and audit history</span></li>
+            <li class="flex gap-3"><i class="fas fa-check text-purple-400 mt-1"></i><span>Cloud-hosted verification service</span></li>
+            <li class="flex gap-3"><i class="fas fa-check text-purple-400 mt-1"></i><span>Priority support and SLA</span></li>
+          </ul>
+        </div>
+      </div>
+      <a href="mailto:ar8itrt0r@gmail.com"
+         class="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-10 py-4 rounded-2xl text-lg transition">
+        <i class="fas fa-envelope"></i>
+        Contact for Enterprise Access
       </a>
     </div>
   </section>

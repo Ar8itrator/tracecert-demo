@@ -1,14 +1,19 @@
 [project]
 name = "tracecert"
-version = "0.3.0"
-description = "AI code certification and continuous audit tool"
-authors = [{ name = "TraceCert" }]
+version = "0.4.0"
 license = { text = "Proprietary - See LICENSE file" }
+description = "Making AI-generated software verifiable with continuous audit and certification levels"
+authors = [{ name = "Ar8itrat0r" }]
 requires-python = ">=3.9"
+dependencies = [
+    "click>=8.1.0",
+    "pydantic>=2.0.0",
+]
 
-[project.urls]
-Homepage = "https://github.com/Ar8itrator/tracecert"
-Repository = "https://github.com/Ar8itrator/tracecert"
+[project.optional-dependencies]
+pdf = ["fpdf2>=2.7.0"]
+yaml = ["PyYAML>=6.0"]
+enterprise = ["fpdf2>=2.7.0", "PyYAML>=6.0"]
 
 [project.scripts]
 tracecert = "tracecert.cli:cli"
